@@ -1,0 +1,57 @@
+[
+  {
+    "brain_id": "fundamental_v1",
+    "label": "Cerveau Fondamental",
+    "brain_type": "fundamental",
+    "version": "1.1.0",
+    "role": "core",
+    "horizon": "medium_term",
+    "default_weight": 0.40,
+    "is_active": true,
+    "description": "Analyse fondamentale: Qualite de Gestion (40%), Valorisation (30%), Stabilite (30%)"
+  },
+  {
+    "brain_id": "quant_v1",
+    "label": "Cerveau Quantitatif",
+    "brain_type": "quant",
+    "version": "1.0.0",
+    "role": "core",
+    "horizon": "short_term",
+    "default_weight": 0.25,
+    "is_active": false,
+    "description": "Analyse quantitative: momentum, mean reversion, signaux techniques"
+  },
+  {
+    "brain_id": "macro_v1",
+    "label": "Cerveau Macro",
+    "brain_type": "macro",
+    "version": "1.0.0",
+    "role": "core",
+    "horizon": "long_term",
+    "default_weight": 0.20,
+    "is_active": false,
+    "description": "Analyse macro-economique: cycles, taux, inflation, geopolitique"
+  },
+  {
+    "brain_id": "behavioral_v1",
+    "label": "Cerveau Comportemental",
+    "brain_type": "behavioral",
+    "version": "1.0.0",
+    "role": "core",
+    "horizon": "short_term",
+    "default_weight": 0.15,
+    "is_active": false,
+    "description": "Analyse comportementale: sentiment, flux, positionnement"
+  },
+  {
+    "brain_id": "adaptive_v1",
+    "label": "Cerveau Adaptatif",
+    "brain_type": "adaptive",
+    "version": "1.0.0",
+    "role": "core",
+    "horizon": "medium_term",
+    "default_weight": 0.0,
+    "is_active": false,
+    "description": "Meta-cerveau: ajuste les poids des autres cerveaux, cree des hybrides"
+  }
+]
