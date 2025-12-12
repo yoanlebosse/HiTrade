@@ -1,0 +1,115 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 220 20% 14%;
+    --foreground: 0 0% 100%;
+    --card: 220 20% 18%;
+    --card-foreground: 0 0% 100%;
+    --popover: 220 20% 16%;
+    --popover-foreground: 0 0% 100%;
+    --primary: 199 89% 48%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 280 85% 65%;
+    --secondary-foreground: 0 0% 100%;
+    --muted: 220 15% 25%;
+    --muted-foreground: 220 10% 70%;
+    --accent: 160 84% 39%;
+    --accent-foreground: 0 0% 100%;
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+    --border: 220 15% 30%;
+    --input: 220 15% 25%;
+    --ring: 199 89% 48%;
+    --radius: 0.75rem;
+    --sidebar-background: 220 20% 16%;
+    --sidebar-foreground: 0 0% 100%;
+    --sidebar-primary: 199 89% 48%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 220 15% 25%;
+    --sidebar-accent-foreground: 0 0% 100%;
+    --sidebar-border: 220 15% 30%;
+    --sidebar-ring: 199 89% 48%;
+  }
+}
+
+body {
+  background: linear-gradient(135deg, hsl(220 25% 12%) 0%, hsl(220 20% 16%) 100%);
+  color: hsl(0 0% 100%);
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  min-height: 100vh;
+}
+
+.neon-glow {
+  box-shadow: 0 0 15px hsl(199 89% 48% / 0.5), 0 0 30px hsl(199 89% 48% / 0.3);
+}
+
+.gradient-border {
+  border: 1px solid hsl(220 15% 35%);
+  background: linear-gradient(135deg, hsl(220 20% 20%) 0%, hsl(220 20% 18%) 100%);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+}
+
+.gradient-border:hover {
+  border-color: hsl(199 89% 48% / 0.5);
+  box-shadow: 0 4px 25px rgba(0, 0, 0, 0.4), 0 0 20px hsl(199 89% 48% / 0.1);
+}
+
+.card-highlight {
+  background: linear-gradient(135deg, hsl(220 20% 22%) 0%, hsl(220 20% 18%) 100%);
+}
+
+/* Enhanced button styles */
+.btn-primary-glow {
+  background: linear-gradient(135deg, hsl(199 89% 48%) 0%, hsl(199 89% 58%) 100%);
+  box-shadow: 0 4px 15px hsl(199 89% 48% / 0.4), 0 0 20px hsl(199 89% 48% / 0.2);
+  transition: all 0.3s ease;
+}
+
+.btn-primary-glow:hover {
+  box-shadow: 0 6px 20px hsl(199 89% 48% / 0.5), 0 0 30px hsl(199 89% 48% / 0.3);
+  transform: translateY(-1px);
+}
+
+/* Top 3 card special effects */
+.card-top-1 {
+  border-color: hsl(45 93% 47% / 0.6);
+  box-shadow: 0 0 25px hsl(45 93% 47% / 0.3), 0 4px 20px rgba(0, 0, 0, 0.4);
+}
+
+.card-top-2 {
+  border-color: hsl(199 89% 48% / 0.5);
+  box-shadow: 0 0 20px hsl(199 89% 48% / 0.25), 0 4px 20px rgba(0, 0, 0, 0.4);
+}
+
+.card-top-3 {
+  border-color: hsl(280 85% 65% / 0.4);
+  box-shadow: 0 0 18px hsl(280 85% 65% / 0.2), 0 4px 20px rgba(0, 0, 0, 0.4);
+}
+
+/* Animated pulse for important elements */
+@keyframes pulse-glow {
+  0%, 100% {
+    box-shadow: 0 0 15px hsl(199 89% 48% / 0.4);
+  }
+  50% {
+    box-shadow: 0 0 25px hsl(199 89% 48% / 0.6);
+  }
+}
+
+.pulse-glow {
+  animation: pulse-glow 2s ease-in-out infinite;
+}
+
+/* Slider track enhancement */
+[data-slot="slider-track"] {
+  background: linear-gradient(90deg, hsl(160 84% 39%) 0%, hsl(199 89% 48%) 50%, hsl(280 85% 65%) 100%);
+}
+
+/* Progress bar enhancement */
+[data-slot="progress-indicator"] {
+  background: linear-gradient(90deg, hsl(199 89% 48%) 0%, hsl(199 89% 58%) 100%);
+}
+
